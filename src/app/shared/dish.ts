@@ -6,3 +6,4 @@ export class Dish{
     price :string;
     description : string;
 }
+
