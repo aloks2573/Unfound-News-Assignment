@@ -1,8 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
  import { NgModule } from '@angular/core';
-
-
+import { LeaderService } from './services/leader.service';
 import { MaterialModule } from '@angular/material'; 
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -41,7 +40,7 @@ import {AppRoutingModule} from './app-routing/app-routing.module';
     AppRoutingModule
     
   ],
-  providers: [DishService,PromotionService ],
+  providers: [DishService,PromotionService, LeaderService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
