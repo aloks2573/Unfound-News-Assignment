@@ -21,7 +21,7 @@ import {DishService} from './services/dish.service';
 import { PromotionService} from './services/promotion.service';
 import {AppRoutingModule} from './app-routing/app-routing.module';
 import { LoginComponent } from './login/login.component';
-
+import {ReactiveFormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +43,8 @@ import { LoginComponent } from './login/login.component';
     MaterialModule,
     FlexLayoutModule,
     AppRoutingModule,
-    FormsModule 
+    FormsModule,
+    ReactiveFormsModule
     
   ],
   providers: [DishService,PromotionService, LeaderService ],
