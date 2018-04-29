@@ -1,0 +1,47 @@
+
+<div class="container"
+fxLayout="row"
+fxLayout.sm="column"
+fxLayout.xs="column"
+fxLayoutAlign.gt-md="space-around center"
+fxLayoutGap="10px" 
+fxLayoutGap.xs="0">
+
+<div fxFlex="40" *ngIf="news">
+  <md-card>
+    <md-card-header>
+      <md-card-title>
+        <h3>{{news.label | uppercase}}</h3>
+      </md-card-title>
+    </md-card-header>
+    <img md-card-image src={{news.image}}>
+    <md-card-content>
+      <p>
+      </p>
+    </md-card-content>
+    <md-card-actions>
+      <button md-button>LIKE</button>
+      <button md-button>SHARE</button>
+      <button md-button (click)="goBack()">BACK</button>
+    </md-card-actions>
+  </md-card>
+
+
+</div>
+<div fxFlex="40" *ngIf="news">
+
+<md-card>
+<md-card-content>
+  
+  <h1> {{news.description}} </h1>
+</md-card-content>
+  
+
+</md-card>
+
+
+
+
+</div>
+
+</div>
